@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+  }
+  .result-container {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 13px 20px 0px 0px rgba(197, 229, 243, 0.2);
+  }
+  .result-card {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+  }
+  .result-card-header, .result-circle-text {
+    margin-top: 10px;
+    color: hsl(242, 63%, 90%);
+  }
+  .result-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .result-circle-number {
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    font-size: 55px;
+    
+  }
+  .result-subheader {
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    
+  }
+  .result-card-text {
+    font-size: 15px;
+    text-align: center;
+    color: hsl(249, 7%, 81%);
+    padding: 0px 45px 0px 45px;
+    margin-bottom: 50px;
+  }
+  .summary-card {
+    width: 300px;
+    height: 450px;
+    padding: 35px;
+    font-size: 15px;
+  }
+  .summary-box > img {
+    margin-right: 15px;
+  }
+  .summary-card-header {
+    margin-bottom: 18px;
+    font-weight: 700;
+  }
+  .summary-box {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .summary-box > span:nth-child(3) {
+    position: absolute;
+    right: 20px;
+  }
+  .box-text{
+    color: black;
+  }
+  .reaction-box {
+    background-color: hsla(0, 76%, 89%, 0.142);
+    color: hsl(0, 100%, 67%);
+  }
+  
+  .memory-box {
+    background-color: hsla(62, 85%, 79%, 0.157);
+    color: hsl(39, 100%, 56%);
+
+  }
+  .verbal-box {
+    background-color: hsla(166, 77%, 83%, 0.144);
+    color: hsl(166, 100%, 37%);
+
+  }
+  .visual-box {
+    background-color: hsla(233, 82%, 87%, 0.155);
+    color: hsl(234, 85%, 45%);
+  }
+  .summary-btn {
+    background-color: hsl(224, 34%, 28%);
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    font-weight: 700;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+  }
+  .summary-btn:hover {
+    background-color: hsl(241, 91%, 60%);
+  }
+  .attribution{
+    font-size: 14px;
+
+  }
+  @media (max-width: 375px) {
+    body {
+      height: auto;
+    }
+    .result-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+    }
+    .summary-card {
+        height: auto;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+      }
+  
+    .result-card {
+      height: auto;
+      width: 100%;
+      
+    }  
+  }
+  
